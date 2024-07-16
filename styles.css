@@ -1,20 +1,114 @@
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    height: 95vh;
+}
+
+.grid {
+    -webkit-user-drag: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 1px 1px;
+    background-color: black;
+    width: 40vw;
+    height: 40vw;
+}
+
+.grid-element {
+    -webkit-user-drag: none;
+    flex: 1;
+    background-color: white;
+}
+
+.grid-row {
+    -webkit-user-drag: none;
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
 }
 
-.grid{
-
-}
-
-.grid-element{
-    background-color: aquamarine ;
-    border-width: 2;
-    border-color: white;
-}
-
-.grid-row{
+.row {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-options-wrapper {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vw;
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(43, 43, 43);
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    justify-content: space-evenly;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#sliderRange {
+    font-size: 16px;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }

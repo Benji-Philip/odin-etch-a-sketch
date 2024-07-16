@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<div class="row">
+    <!-- etch a sketch options -->
+     <div class="grid-options-wrapper">
+        Options
+        <!-- darken -->
+         <button id="rainbowButton">rainbow</button>
+        <!-- Rainbow -->
+         <button id="darkenButton">darken</button>
+        <!-- reset -->
+         <button id="resetButton">reset</button>
+        <!-- slider for choosing grid resolution -->
+        <input type="range" min="16" max="100" value="32" class="slider" id="myRange">
+        <div id="sliderRange"></div>
+     </div>
     <!-- etch a sketch grid -->
      <div class="grid"></div>
-    <!-- etch a sketch options -->
-    
+</div>
 </body>
 </html>
