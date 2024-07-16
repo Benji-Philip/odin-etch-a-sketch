@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid{
+
+}
+
+.grid-element{
+    background-color: aquamarine ;
+    border-width: 2;
+    border-color: white;
+}
+
+.grid-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
